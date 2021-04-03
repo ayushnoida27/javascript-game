@@ -1,0 +1,67 @@
+<html>
+<head>
+
+<title>game
+</title>
+<style type="text/css">
+#one{
+    background-color: bisque;
+    width: 270px;
+    height: 100px;
+    margin: auto;
+    margin-top: 250px;
+    padding: 50px;
+    
+}
+
+
+
+
+
+
+</style>
+</head>
+<body><div id="one">
+<p>How many fingers?</p>
+<p><input type="text" id="box"><button id="but">Guess</button></p>
+</div>    
+</body>
+
+<script type="text/javascript">
+document.getElementById("but").onclick=function(){
+
+var number= Math.random();
+number=number*6;
+number=Math.floor(number);
+if(document.getElementById("box").value==number){
+
+    alert("u got it");
+}
+else{
+    alert("nope! the number was" + number);
+}
+
+
+
+}
+
+
+    
+</script>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
